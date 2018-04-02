@@ -22,6 +22,14 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1>5. Github Search</h1>
+            <form action="https://github.com/search">
+              <fieldset class="form-group">
+                <label for="gh">Search Github</label>
+                <input type="text" class="form-control" id="gh" name="q" placeholder="search repository">
+                <input type="hidden" name="l" value="HTML">
+              </fieldset>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           <pre>
             Create an html `form` that searches github
             for code examples that match
