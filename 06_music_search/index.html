@@ -22,6 +22,14 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1>6. Music Search</h1>
+            <form action="https://itunes.apple.com/search">
+              <fieldset class="form-group">
+                <label for="music">Artist Name</label>
+                <input name="term"type="text" class="form-control" id="music" placeholder="Search Music On Itunes by Typing the name of the Artist">
+                <input name="country" value="us" type="hidden" class="form-control" id="country">
+              </fieldset>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           <pre>
             This challenge is different from the last 5.
             Instead of going to an HTML endpoint,
