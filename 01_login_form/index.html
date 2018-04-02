@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Blank</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+  <title>Blank</title>
 
-    <!-- VENDOR SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
 
-    <!-- APPLICATION SCRIPTS -->
-    <script src="scripts/app.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>1. Login Form.</h1>
-          <pre>
+  <!-- VENDOR SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script src="scripts/app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>1. Login Form.</h1>
+        <form>
+          <fieldset class="form-group">
+            <label for="Email1">Email address</label>
+            <input type="email" class="form-control" id="Email1" placeholder="Enter email" required>
+            <small class="text-muted">We'll never share your email with anyone else.</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password" minlength='6'>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <pre>
             Create an html `form` with two inputs:
               * one for a username (named "username")
               * the other for password (named "password")
@@ -32,8 +46,8 @@
 
             Question: What happens in the URL when you click submit?
           </pre>
-        </div>
-        <div class="row">
+      </div>
+      <div class="row">
         <div class="col-md-8 col-md-offset-2">
 
           <!-- CODE IN HERE -->
@@ -41,5 +55,6 @@
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
